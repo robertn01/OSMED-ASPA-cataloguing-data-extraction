@@ -1,0 +1,4 @@
+# NTRS accession ids (one per line). Lines starting with # are ignored.
+# Replace these placeholders with real ids from ntrs.nasa.gov/citations/<id>.
+19660005960
+19670002673

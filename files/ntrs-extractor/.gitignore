@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data & derived artefacts (keep raw PDFs out of git; use DVC / release assets)
+data/raw/**/*.pdf
+data/interim/
+data/outputs/
+qc/**/overlays/
+qc/**/*.xlsx
+
+# Keep folder structure via .gitkeep
+!.gitkeep
+
+# OS
+.DS_Store

@@ -1,0 +1,25 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+openpyxl>=3.1
+PyYAML>=6.0
+
+# PDF text + layout
+pdfplumber>=0.11
+
+# Table extraction
+camelot-py>=1.0
+# camelot needs a PDF backend; ghostscript recommended for 'lattice'
+opencv-python-headless>=4.9
+
+# Figure digitisation
+scikit-image>=0.22
+scipy>=1.11
+
+# Optional accelerators / OCR (uncomment if used)
+# PyMuPDF>=1.24          # faster rasterisation than pdfplumber
+# pytesseract>=0.3       # assisted axis-tick OCR (needs system 'tesseract')
+
+# Dev
+pytest>=7.4
+reportlab>=4.0          # only for generating synthetic test PDFs

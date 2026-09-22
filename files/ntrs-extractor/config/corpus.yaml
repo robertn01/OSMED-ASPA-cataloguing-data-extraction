@@ -1,0 +1,28 @@
+# Corpus registry: one entry per PDF, grouped by space program.
+# `printed_offset` (pdf_page = printed_page + offset) is a best-effort hint used
+# only to sanity-check the auto-detected printed page numbers.
+#
+# Add new documents / programs here, or use scripts/register_pdfs.py to bulk-add.
+
+programs:
+  mercury:
+    label: Project Mercury
+    id_prefix: MR
+    documents:
+      - doc_id: MR4
+        pdf_filename: mercury_redstone_4_results.pdf
+        title: "Results of the Second U.S. Manned Suborbital Space Flight (MR-4), NASA MSC, 1961"
+        ntrs_id: "19630001080"        # placeholder; set the true NTRS id
+        printed_offset: 6
+        notes: "Grissom / Liberty Bell 7. Tables 2-I, 3-I..3-VI, 5-I, 5-II, 7-I; Figures 2-x..7-x."
+
+  apollo:
+    label: Project Apollo
+    id_prefix: AP
+    documents:
+      - doc_id: A14
+        pdf_filename: Medical_Results_of_Apollo_14.pdf
+        title: "Medical Results of Apollo 14 - Implications for Longer Duration Space Flights, C. A. Berry, 1971"
+        ntrs_id: ""
+        printed_offset: 2
+        notes: "Tables 1-11; Figure 1 (CMP static-stand heart rate) is the key data-bearing chart."
